@@ -1,0 +1,40 @@
+[server]
+host = 0.0.0.0
+port = 7125
+
+[file_manager]
+
+[authorization]
+cors_domains = 
+	https://my.mainsail.xyz
+	http://my.mainsail.xyz
+	http://*.local
+	http://*.lan
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+
+[update_manager client mainsail]
+type = web
+repo = meteyou/mainsail
+path = ~/mainsail
+
+[power enclosure_light]
+type = homeassistant
+address = 10.10.10.10
+port = 8123
+device = switch.enclosure_light
+token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI5MGMwMGUwZjlkNDQ0ZTA5YTUzY2I5NjY2NDI2ZjBlMyIsImlhdCI6MTYzNjg1MjQwMywiZXhwIjoxOTUyMjEyNDAzfQ.fk1cgd-i0fBJ_izKPqZ4cyLCbJinGS5dY9pERol89m0
+domain = switch
+
